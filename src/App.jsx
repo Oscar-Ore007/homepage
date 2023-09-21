@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Homepage from "./components/Homepage"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-     
+        <Homepage />
+        <Navbar />
       </div>
       <h1>HomePage: Connect and meet other Devs!</h1>
       <div className="card">
@@ -22,7 +25,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
